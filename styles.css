@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+.wrapper {
+    width: 80%;
+    border: 1px solid red;
+    margin: 0 auto;
+    font-family: Arial;
+    background-color: rgb(255, 174, 0);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+.site-title h1 {
+    font-size: 90px;
+}
+
+.site-title h1 span {
+    text-decoration: underline;
+}
+
+nav {
+    margin: 15px 0px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.hero .banner {
+    background: url('project2/clock.jpg') center;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 2px solid red;
+}
+
+.hero .colum-4 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-letter {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* Corrected class names to "news-letter" and "Signup-text" */
+.news-letter .signup, .news-letter .Signup-text {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+/* Corrected class name to "signup" */
+.news-letter .signup input {
+    border: 1px solid #fd0707;
+    padding: 5%;
+    margin-bottom: 5%;
+    width: 100px;
+}
+
+.Sitemap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Sitemap section {
+    margin: 10px 35px;
+    /* Changed to display child elements in a row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Sitemap ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Sitemap li {
+    margin-bottom: 5px;
+}
+
+.news-letter .signup button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Added fixed width for both buttons */
+    width: 100px;
+}
+
+/* Styling specific to the login button */
+.news-letter .signup .login-button {
+    background-color: #4285f4; /* Google blue for login button */
+    color: white;
+    margin-right: 5px;
+}
+
+/* Styling specific to the register button */
+.news-letter .signup button:not(.login-button) {
+    background-color: #4CAF50; /* Green for register button */
+    color: white;
+}
+
+/* Add hover effect for both buttons */
+.news-letter .signup button:hover {
+    opacity: 0.8;
+}
